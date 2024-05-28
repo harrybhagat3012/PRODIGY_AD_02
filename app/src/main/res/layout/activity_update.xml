@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".updateActivity">
+
+    <TextView
+        android:id="@+id/updatenoteheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="24sp"
+        android:text="Edit Note"
+        android:textColor="@color/blue" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/updatenoteheader"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/updatesavebtn"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/updateaddtitle"
+        android:hint="Enter The Title"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/updatenoteheader"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updatecontent"
+        android:hint="Enter The Content"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/updateaddtitle"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"/>
+
+
+</RelativeLayout>
